@@ -1,0 +1,112 @@
+.footer {
+	background-color: var(--color-dark-blue);
+
+	&__container {
+		padding-top: 42px;
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: 650px) {
+			align-items: center;
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
+	&__info-title {
+		font-size: 11px;
+		font-weight: 400;
+		padding-bottom: 19px;
+	}
+
+	&__info-text {
+		padding-top: 15px;
+		max-width: 250px;
+	}
+
+	&__nav {
+		padding: 0 15px;
+		display: flex;
+		gap: 36px;
+
+		@media screen and (max-width: 650px) {
+			padding: 0;
+		}
+	}
+
+	&__menu-1,
+	&__menu-2,
+	&__menu-3 {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__menu-2,
+	&__menu-3 {
+		padding-top: 24.8px;
+	}
+
+	&__link {
+		position: relative;
+		color: var(--color-gray);
+		transition: color 0.2s linear;
+	}
+
+	&__link:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 1px;
+		width: 100%;
+		background: var(--color-blue);
+		border-radius: 50px;
+		transform: scalex(0);
+		transition: transform 0.2s linear;
+	}
+
+	&__link:hover {
+		color: var(--color-blue);
+	}
+	&__link:hover:before {
+		transform: scale(1);
+	}
+
+	&__address {
+		display: flex;
+		justify-content: space-between;
+		gap: 47px;
+	}
+
+	&__address-list {
+		display: flex;
+		flex-direction: column;
+		max-width: 140px;
+		gap: 15px;
+	}
+
+	&__socials {
+		padding-top: 31px;
+		display: flex;
+		gap: 24px;
+	}
+
+	&__adress-link {
+		color: var(--color-gray);
+		transition: color 0.2s linear;
+	}
+
+	&__adress-link:hover {
+		color: var(--color-blue);
+	}
+
+	&__address-icon {
+		fill: var(--color-white);
+		transition: fill 0.2s linear;
+	}
+
+	&__address-icon:hover {
+		fill: var(--color-blue);
+	}
+}

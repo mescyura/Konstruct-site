@@ -1,0 +1,40 @@
+.hero-section {
+	background-image: url('../images/hero.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-top: 41px;
+	padding-bottom: 71px;
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		font-family: 'Bebas Neue';
+		font-size: 60px;
+		font-weight: 400;
+		letter-spacing: 6px;
+		margin-top: 317px;
+		text-align: center;
+		color: var(--color-white);
+	}
+
+	&__secondary-title {
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
+		color: var(--color-white);
+	}
+
+	&__last-title {
+		margin-top: 221px;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 3.7px;
+		text-align: center;
+		color: var(--color-white);
+	}
+}

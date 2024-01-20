@@ -1,0 +1,43 @@
+.newsletter-section {
+	background-color: var(--color-black);
+	padding: 30px 0;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 70px;
+
+		@media screen and (max-width: 620px) {
+			flex-direction: column;
+			gap: 40px;
+		}
+	}
+
+	&__text {
+		color: var(--color-white);
+		font-size: 22px;
+		letter-spacing: 0.846px;
+		font-weight: 700;
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__input {
+		color: var(--color-gray);
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.07px;
+		width: 250px;
+		height: 100%;
+		padding-left: 16px;
+		border: none;
+		font-family: 'Open Sans', sans-serif;
+
+		@media screen and (max-width: 500px) {
+			width: 200px;
+		}
+	}
+}
