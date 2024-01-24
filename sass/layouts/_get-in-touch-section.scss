@@ -5,7 +5,7 @@
 	background-position: center 1px;
 	background-repeat: no-repeat;
 
-	@media screen and (max-width: 620px) {
+	@media screen and (max-width: $bp-tablet) {
 		padding-top: 0;
 	}
 
@@ -19,6 +19,10 @@
 	&__title {
 		padding-top: 120px;
 		padding-bottom: 35px;
+		// font-size: 30px;
+		font-size: clamp(2rem, 5vw, 3rem);
+		// line-height: 36px;
+		line-height: clamp(2.4rem, 6vw, 3.6rem);
 		text-align: center;
 	}
 }

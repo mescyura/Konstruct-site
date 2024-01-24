@@ -7,13 +7,21 @@
 		justify-content: space-between;
 		gap: 32px;
 		margin-bottom: 78px;
+
+		@media screen and (max-width: $bp-tablet) {
+			flex-direction: column;
+		}
 	}
 
 	&__title {
 		position: relative;
-		font-size: 18px;
+		font-size: 1.8rem;
 		font-weight: 700;
 		letter-spacing: 2.306px;
+
+		@media screen and (max-width: $bp-tablet) {
+			text-align: center;
+		}
 	}
 
 	&__title::before {
@@ -29,24 +37,30 @@
 		gap: 32px;
 		align-items: center;
 
-		@media screen and (max-width: 620px) {
+		@media screen and (max-width: $bp-tablet) {
 			flex-direction: column;
 		}
 	}
 
 	&__service-text {
-		font-size: 11px;
 		max-width: 400px;
+
+		@media screen and (max-width: 620px) {
+			text-align: center;
+		}
 	}
 
 	&__cards {
 		display: flex;
-		justify-content: space-between;
 		gap: 28px;
 
-		@media screen and (max-width: 620px) {
+		@media screen and (max-width: $bp-tablet) {
 			flex-direction: column;
 		}
+	}
+
+	&__cards > &__cards {
+		flex: 1;
 	}
 
 	&__card {
@@ -55,14 +69,16 @@
 	}
 
 	&__card-title {
+		font-size: 1.6rem;
+		font-size: clamp(1.4rem, 3vw, 1.6rem);
+		font-weight: 700;
 		padding-top: 25px;
 		padding-bottom: 13px;
-		font-size: 16px;
-		font-weight: 700;
 	}
 
 	&__card-text {
-		font-size: 13px;
+		font-size: 1.3rem;
+		font-size: clamp(1.1rem, 2.5vw, 1.3rem);
 		font-weight: 400;
 	}
 }

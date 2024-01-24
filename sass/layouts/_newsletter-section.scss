@@ -8,15 +8,16 @@
 		align-items: center;
 		gap: 70px;
 
-		@media screen and (max-width: 620px) {
+		@media screen and (max-width: $bp-tablet) {
 			flex-direction: column;
-			gap: 40px;
+			gap: 20px;
 		}
 	}
 
 	&__text {
 		color: var(--color-white);
-		font-size: 22px;
+		// font-size: 22px;
+		font-size: clamp(2rem, 4vw, 2.2rem);
 		letter-spacing: 0.846px;
 		font-weight: 700;
 	}
@@ -27,9 +28,8 @@
 
 	&__input {
 		color: var(--color-gray);
-		font-size: 14px;
+		font-size: 1.4rem;
 		font-weight: 400;
-		letter-spacing: 0.07px;
 		width: 250px;
 		height: 100%;
 		padding-left: 16px;

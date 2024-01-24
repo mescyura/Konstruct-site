@@ -13,15 +13,14 @@
 		/>
 
 		<link rel="stylesheet" href="./css/main.min.css" />
+		<base target="_blank">
 	</head>
 	<body>
-		<section class="hero-section">
+		<section class="hero-section" id="hero-section">
 			<div class="container">
-				<div class="hero-section__icon">
-					<a href="/">
-						<img src="./images/konstruct-logo-white.svg" alt="" />
-					</a>
-				</div>
+				<a href="index.html">
+					<img src="./images/konstruct-logo-white.svg" alt="" />
+				</a>
 				<h1 class="hero-section__title">PARTNER WITH KONSTUCT</h1>
 				<h2 class="hero-section__secondary-title">
 					An award-winning construction management firm
@@ -40,7 +39,7 @@
 						</div>
 						<ul class="header__menu">
 							<li>
-								<a class="header__link" href="/">HOME</a>
+								<a class="header__link" href="index.html">HOME</a>
 							</li>
 							<li>
 								<a class="header__link" href="#story-section">ABOUT</a>
@@ -70,30 +69,44 @@
 								<use href="./images/icons.svg#icon-close"></use>
 							</svg>
 						</button>
-						<div class="mobile-menu__logo">
-							<a href="/"
+						<div class="mobile-menu__logo menu-btn-close">
+							<a href="index.html"
 								><img src="./images/konstruct-logo-black.svg" alt=""
 							/></a>
 						</div>
 						<ul class="mobile-menu__list">
 							<li>
-								<a class="mobile-menu__link" href="/"> HOME </a>
+								<a class="mobile-menu__link menu-btn-close" href="index.html">
+									HOME
+								</a>
 							</li>
 							<li>
-								<a class="mobile-menu__link" href="#story-section">ABOUT</a>
+								<a
+									class="mobile-menu__link menu-btn-close"
+									href="#story-section"
+									>ABOUT</a
+								>
 							</li>
 							<li>
-								<a class="mobile-menu__link" href="#capabilities-section">
+								<a
+									class="mobile-menu__link menu-btn-close"
+									href="#capabilities-section"
+								>
 									SERVICES
 								</a>
 							</li>
 							<li>
-								<a class="mobile-menu__link" href="#get-in-touch-section">
+								<a
+									class="mobile-menu__link menu-btn-close"
+									href="#get-in-touch-section"
+								>
 									WORK
 								</a>
 							</li>
 							<li>
-								<a class="mobile-menu__link" href="#footer"> CONTACT </a>
+								<a class="mobile-menu__link menu-btn-close" href="#footer">
+									CONTACT
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -152,11 +165,10 @@
 							<h2 class="capabilities-section__title">OUR CAPABILITIES</h2>
 						</div>
 						<div class="capabilities-section__service">
-							<p class="capabilities-section__servise-text">
+							<p class="capabilities-section__service-text">
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-								diam <br />
-								nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-								erat.
+								diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+								aliquam erat.
 							</p>
 							<button class="button-blue">ALL SERVICES</button>
 						</div>
@@ -247,31 +259,41 @@
 							</p>
 						</div>
 						<nav class="footer__nav">
-							<ul class="footer__menu-1">
-								<li><a class="footer__link" href="#">LINKS</a></li>
-								<li><a class="footer__link" href="#">HOME</a></li>
-								<li><a class="footer__link" href="#">ABOUT</a></li>
-								<li><a class="footer__link" href="#">SERVICES</a></li>
-								<li><a class="footer__link" href="#">PROJECTS</a></li>
-								<li><a class="footer__link" href="#">CONTACT US</a></li>
-							</ul>
-							<ul class="footer__menu-2">
-								<li><a class="footer__link" href="#">FAQ</a></li>
-								<li><a class="footer__link" href="#">TERMS</a></li>
-								<li><a class="footer__link" href="#">CAREERS</a></li>
-							</ul>
-							<ul class="footer__menu-3">
-								<li><a class="footer__link" href="#">BLOG</a></li>
-								<li><a class="footer__link" href="#">PARTNERS</a></li>
-								<li><a class="footer__link" href="#">NEWS</a></li>
-							</ul>
+							<h2 class="footer__nav-title">LINKS</h2>
+							<div class="footer__link-menu">
+								<ul class="footer__menu-1">
+									<li><a class="footer__link" href="index.html">HOME</a></li>
+									<li>
+										<a class="footer__link" href="#story-section">ABOUT</a>
+									</li>
+									<li>
+										<a class="footer__link" href="#capabilities-section"
+											>SERVICES</a
+										>
+									</li>
+									<li>
+										<a class="footer__link" href="#hero-section">PROJECTS</a>
+									</li>
+									<li><a class="footer__link" href="#footer">CONTACT US</a></li>
+								</ul>
+								<ul class="footer__menu-2">
+									<li><a class="footer__link" href="#hero-section">FAQ</a></li>
+									<li><a class="footer__link" href="#hero-section">TERMS</a></li>
+									<li><a class="footer__link" href="#hero-section">CAREERS</a></li>
+								</ul>
+								<ul class="footer__menu-3">
+									<li><a class="footer__link" href="#hero-section">BLOG</a></li>
+									<li>
+										<a class="footer__link" href="#hero-section">PARTNERS</a>
+									</li>
+									<li><a class="footer__link" href="#hero-section">NEWS</a></li>
+								</ul>
+							</div>
 						</nav>
 						<address class="footer__address">
 							<div>
+								<h1 class="footer__adress-list-title">CONTACT US</h1>
 								<ul class="footer__address-list">
-									<li>
-										<p class="footer__adress-link">CONTACT US</p>
-									</li>
 									<li>
 										<a
 											class="footer__adress-link"
@@ -298,17 +320,17 @@
 								</ul>
 							</div>
 							<div class="footer__socials">
-								<a href="#">
+								<a href="https://www.facebook.com/yurii.holuda/">
 									<svg class="footer__address-icon" width="12" height="12">
 										<use href="./images/icons.svg#facebook-icon"></use>
 									</svg>
 								</a>
-								<a href="#">
+								<a href="https://twitter.com/mescyuraa">
 									<svg class="footer__address-icon" width="12" height="12">
 										<use href="./images/icons.svg#twitter-icon"></use>
 									</svg>
 								</a>
-								<a href="#">
+								<a href="https://www.google.com/">
 									<svg class="footer__address-icon" width="12" height="12">
 										<use href="./images/icons.svg#google-icon"></use>
 									</svg>
